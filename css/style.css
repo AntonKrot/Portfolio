@@ -1,0 +1,136 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  background-color: green;
+}
+.wrapper:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.header {
+  height: 885px;
+}
+.logo {
+  margin-top: 6px;
+  margin-left: 215px;
+}
+.logo-size {
+  height: 40px;
+}
+.navbar {
+  height: 85px;
+  box-shadow: #7f7f7f 4px 0.3px;
+  border-radius: 0;
+  background: #ffffff;
+}
+.navbar.navbar-default {
+  margin-bottom: 0;
+}
+ul:hover {
+  color: #1abb9c !important;
+}
+li {
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: Lato-Black sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.menu-indent {
+  padding-right: 125px;
+}
+header .container-fluid-pic {
+  background-image: url('../img/Background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  padding-top: 36px;
+}
+.row {
+  background: none;
+  text-align: center;
+  margin-top: 250px;
+}
+.row__text-first {
+  font-family: Lato-Black sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  background: #333333;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+}
+.row__text-second {
+  color: #FFFFFF;
+  font-family: Lato-Light sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  background: #333333;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.button-img {
+  padding: 10px;
+  background: #333333;
+  opacity: 0.7;
+}
+.button-img:hover,
+.button-img:active {
+  padding: 10px;
+  background: #646464;
+  opacity: 0.7;
+}
+.content {
+  background: #ED4577;
+  padding-bottom: 100px;
+}
+.line {
+  height: 90px;
+  background: #1abc9c;
+}
+.line-text {
+  font-family: Lato-Black sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 215px;
+  padding-top: 15px;
+}
+.row-first-section {
+  margin: 0;
+}
+.img-circle {
+  padding: 20px;
+  margin-left: 125px;
+  height: 340px;
+}
+.row-desc {
+  margin-top: 30px;
+}
+.row-desc-text {
+  font-family: Lato-Regular sans-serif;
+  font-size: 30px;
+}
+.row-desc-par {
+  font-family: Lato-Regular sans-serif;
+  font-size: 20px;
+}
+.footer {
+  background-color: #333;
+  height: 100px;
+  margin-top: -100px;
+  clear: both;
+}
