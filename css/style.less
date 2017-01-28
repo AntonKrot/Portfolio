@@ -7,7 +7,6 @@ html, body {
 
 .wrapper {
   min-height: 100%;
-  background-color: green;
 }
 
 .wrapper:after {
@@ -109,6 +108,18 @@ header .container-fluid-pic {
   background: #1abc9c;
 
   &-text {
+    &:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 16px solid transparent;
+      border-top-color: #1ABC9C;
+      content: "";
+      top: 70px;
+      left: 75px;
+    }
+
+    position: relative;
     font-family: Lato-Black sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -257,7 +268,7 @@ h3 {
       font-weight: bold;
       color: #b0b0b0;
       vertical-align: middle;
-      margin-left: 25px;
+      margin: 0 0 0 25px;
     }
 
     &__like__link {
@@ -281,13 +292,129 @@ h3 {
     }
 
   }
+}
+.caption {
+  padding: 0 25px 0 25px!important;
+  &__title {
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: Lato-Black, sans-serif;
+    color: #5c5c5c;
+    text-transform: uppercase;
+  }
 
+  &__p {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family: Lato-Regular , sans-serif;
+    color: #656565;
+    line-height: 2.2;
+  }
+}
+
+.four-section {
+  background: url("../img/four-section-bg-img.png"), no-repeat;
+
+  &-button {
+    width: 140px;
+    font-family: "Lato-Regular", sans-serif;
+    text-transform: uppercase;
+    border-bottom: solid 2px #3678a3;
+    margin-bottom: 80px;
+
+  }
+
+  &-img {
+    padding: 0 10px 5px 0;
+    width: 30px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-family: Lato-Black, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 80px;
+  }
+
+  &__p {
+    font-size: 15px;
+    font-family: Lato-Regular, sans-serif;
+    color: #d9d9d9;
+    line-height: 2.2;
+  }
+}
+
+#you-name {
+  height: 45px;
+  margin-top: 80px;
+  padding-left: 16px;
+}
+
+#email,
+#subject {
+  height: 45px;
+  margin-top: 20px;
+  padding-left: 16px;
+}
+
+#message {
+  height: 212px;
+  margin: 20px 0 20px 0;
+  padding: 20px 0 0 16px;
+}
+
+#you-name,
+#email,
+#subject,
+#message {
+  width: 770px;
+  background: #5a5a59;
+  opacity: 0.8;
+  border: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  font-family: Lato-Black,sans-serif;
+  font-weight: bolder;
+}
+
+.data {
+  margin-top: 40px;
+  position: relative;
+  &-field {
+    margin-bottom: 20px;
+    &-p {
+      &-one {
+        top: 0;
+      }
+
+      &-second {
+        top: 40px;
+      }
+
+      &-there {
+        top: 78px;
+      }
+    }
+  }
+}
+
+.data-field-p-one,
+.data-field-p-second,
+.data-field-p-there {
+  position: absolute;
+  left: 27px;
+  font-size: 15px;
+  font-family: Lato-Regular, sans-serif;
+  color: #a0a0a0;
 }
 
 .footer {
-  background-color: #333;
+  background-color: #ffffff;
   height: 100px;
   margin-top: -100px;
   clear: both;
+  text-align: center;
 }
 
