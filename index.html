@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
+    <header class="header" id="home">
         <nav class="menu">
             <nav class="navbar navbar-default">
                 <div class="container">
@@ -22,22 +22,22 @@
                             </div>
                         </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                data-target="#bs-navbar-collapse" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <div class="col-sm-10 col-md-10 col-lg-10">
+                    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                        <div class="col-sm-10 col-md-10 col-lg-10 navbar-col">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Journal</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a class="navbar-section" href="#home">Home</a></li>
+                                <li><a class="navbar-section" href="#about">About</a></li>
+                                <li><a class="navbar-section" href="#portfolio">Portfolio</a></li>
+                                <li><a class="navbar-section" href="#journal">Journal</a></li>
+                                <li><a class="navbar-section" href="#features">Features</a></li>
+                                <li><a class="navbar-section" href="#features">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
         </div>
     </header>
     <main class="content">
-        <section class="line">
+        <section class="line" id="about">
             <div class="container">
                 <h1 class="line-text">
                     A little about me
@@ -71,12 +71,12 @@
         </section>
         <div class="container">
             <div class="first-section">
-                <div class="col-sm-12 col-md-2 col-lg-2">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                     <img src="img/ilon-mask.jpg" alt="Ilion Mask" class="img-circle">
                 </div>
                 <div class="col-md-1 col-lg-1"></div>
                 <div class="col-md-1 col-lg-1"></div>
-                <div class="col-sm-12 col-md-8 col-lg-8 desc">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 desc">
                     <h1 class="desc-text">Vestibulum ligut praesent commodo cursus magna, scelerisque sit consectetur
                         et. <br><br> Cum sociis natoque penatibus et magnis dis tellus parturient pharetra montes.</h1>
                     <br>
@@ -121,7 +121,7 @@
                                                                                        src="img/Mail.png" alt="Mail">Hire
                 me</a>
         </div>
-        <section class="line">
+        <section class="line" id="portfolio">
             <div class="container">
                 <h1 class="line-text">
                     My portfolio
@@ -169,7 +169,7 @@
                 </div>
             </div>
         </div>
-        <section class="line">
+        <section class="line" id="journal">
             <div class="container">
                 <h1 class="line-text">
                     Latest blog posts
@@ -266,7 +266,7 @@
                 </div>
             </div>
         </div>
-        <section class="line">
+        <section class="line" id="features">
             <div class="container">
                 <h1 class="line-text">
                     Get ın touch
@@ -312,16 +312,13 @@
         </div>
     </main>
 </div>
-<footer class="footer">
+<footer class="footer" id="Contact">
     <div class="container">
-        <br>
-        <p>&copy; 2017 Designer - Kyte. Developer - Anton Kopchak. All rights reserved. Theme by elemis.
-        <p>
-            <br>
-            <a href="#" class="btn btn-link button-img"><img src="img/Twitter.png" alt="Twitter"></a>
-            <a href="#" class="btn btn-link button-img"><img src="img/Instagram.png" alt="Instagram"></a>
-            <a href="#" class="btn btn-link button-img"><img src="img/Dribbble.png" alt="Dribbble"></a>
-            <a href="#" class="btn btn-link button-img"><img src="img/Mail.png" alt="Mail"></a>
+        <p class="footer-p">&copy; 2017 Designer - Kyte. Developer - Anton Kopchak. All rights reserved. Theme by elemis.</p>
+        <a href="#" class="btn btn-link footer-img"><img src="img/footer-twitter.png" alt="Twitter"></a>
+        <a href="#" class="btn btn-link footer-img"><img src="img/footer-instagram.png" alt="Instagram"></a>
+        <a href="#" class="btn btn-link footer-img"><img src="img/footer-dribbble.png" alt="Dribbble"></a>
+        <a href="#" class="btn btn-link footer-img"><img src="img/footer-mail.png" alt="Mail"></a>
     </div>
 </footer>
 </body>
