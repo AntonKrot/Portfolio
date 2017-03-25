@@ -62,8 +62,14 @@ li {
   font-weight: 900;
   margin-top: 15px;
 }
-header .container-fluid-pic {
+.container-fluid-pic {
   background: url("../images/Background.jpg"), no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding-top: 36px;
+}
+.container-fluid-pic__second {
+  background: url("../images/Background__2.jpg"), no-repeat;
   background-size: cover;
   height: 700px;
   padding-top: 36px;
@@ -203,34 +209,11 @@ h3 {
   font-family: "Lato-Regular", sans-serif;
   color: #ffffff;
 }
-.second-section-first-row,
-.second-section-second-row {
-  padding-top: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 .second-section-second-row {
   margin-bottom: 75px;
 }
 .second-section-href {
   padding: 0;
-}
-.second-section__img__one {
-  width: 100%;
-  margin: 0 5px 0 0;
-  border-bottom: 4px solid #2d2d2d;
-}
-.second-section__img__two {
-  width: 100%;
-  margin: 0 5px 0 5px;
-  border-bottom: 4px solid #2d2d2d;
-}
-.second-section__img__there {
-  width: 100%;
-  margin: 0 0 0 5px;
-  border-bottom: 4px solid #2d2d2d;
 }
 .there-section {
   background: #f0f0f0;
@@ -315,10 +298,14 @@ h3 {
 }
 .four-section-button {
   width: 140px;
+  height: 40px;
+  border-radius: 4px;
   font-family: "Lato-Regular", sans-serif;
   text-transform: uppercase;
-  border-bottom: solid 2px #3678a3;
+  border: 0;
+  border-bottom: 2px solid #3678a3;
   margin-bottom: 80px;
+  margin-top: 40px;
 }
 .four-section-button:hover {
   color: #ffffff!important;
@@ -340,7 +327,7 @@ h3 {
   color: #d9d9d9;
   line-height: 2.2;
 }
-#you-name {
+#youName {
   height: 45px;
   margin-top: 80px;
   padding-left: 16px;
@@ -353,10 +340,10 @@ h3 {
 }
 #message {
   height: 212px;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 10px 0;
   padding: 20px 0 0 16px;
 }
-#you-name,
+#youName,
 #email,
 #subject,
 #message {
@@ -395,6 +382,12 @@ h3 {
   font-size: 15px;
   font-family: Lato-Regular, sans-serif;
   color: #a0a0a0;
+}
+.error {
+  color: red;
+}
+#message-error {
+  float: left;
 }
 /*------------------------------------*\
 	FOOTER
@@ -450,6 +443,9 @@ h3 {
     cursor: pointer;
     box-shadow: 0 0 1px #b3b3b1;
   }
+  .collapsed {
+    margin-top: 25px;
+  }
   .line-text {
     text-align: center;
   }
@@ -459,10 +455,7 @@ h3 {
   li {
     margin: 0;
   }
-  .img-circle {
-    margin-left: 160px;
-  }
-  #you-name,
+  #youName,
   #email,
   #subject,
   #message {
@@ -471,12 +464,48 @@ h3 {
   .four-section__title {
     margin-top: 20px;
   }
+  .img-circle {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .first-section-col {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1240px) {
-  #you-name,
+  #youName,
   #email,
   #subject,
   #message {
     width: 100%;
   }
+  .img-circle {
+    margin-left: 0;
+  }
+  .first-section-col {
+    text-align: center;
+  }
+}
+/*------------------------------------*\
+	FLICKITY
+\*------------------------------------*/
+.carousel-cell {
+  width: 100%!important;
+  margin-right: 10px;
+}
+.control-box {
+  margin-right: 5px;
+}
+.bx-wrapper {
+  width: 100%;
+  min-height: 100px;
+}
+.bx-wrapper li {
+  width: 200px!important;
+  margin: 2px 0 ;
+}
+.bx-wrapper li img {
+  width: 200px;
+  height: 300px;
 }
